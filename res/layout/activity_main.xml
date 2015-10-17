@@ -11,21 +11,23 @@
     <EditText android:id="@+id/name"
         android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
+        android:hint="@string/enter_name"
         android:layout_weight="0.27" />
 
 
     <EditText android:id="@+id/bio"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Your Bio"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:hint="@string/enter_bio"
         android:layout_weight="0.27" />
 
 
     <EditText android:id="@+id/phone"
         android:layout_width="355dp"
         android:layout_height="wrap_content"
-        android:hint="Enter Phone Number"
+        android:hint="@string/enter_phone"
         android:layout_weight="0.27" />
 
 
@@ -33,7 +35,7 @@
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Upload Your Image"
+        android:hint="@string/upload_image"
         android:onClick="submit"
         android:layout_gravity="center_horizontal" />
 
@@ -41,7 +43,7 @@
     <Button
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:text="Submit"
+        android:hint="@string/submit"
         android:onClick="submit"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>
